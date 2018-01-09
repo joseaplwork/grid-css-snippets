@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      --indigo700: #303F9F;
+      --indigo500: #3F51B5;
+      --indigo300: #7986CB;
+      margin: 0;
+    }
+
+    .grid div {
+      order: 2;
+      border: 1px solid var(--indigo700);
+      border-radius: 3px;
+      background-color: var(--indigo500);
+      padding: 0.5em;
+      color: #fff;
+    }
+
+    .grid div:nth-child(odd) {
+      background-color: var(--indigo300);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-rows: repeat(3, 100px);
+      grid-gap: 20px;
+      grid-auto-flow: column;
+    }
+
+    .grid div:nth-child(2) {
+      order: 1;
+      order: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div>
+</body>
+</html>
